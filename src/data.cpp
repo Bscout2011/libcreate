@@ -40,6 +40,10 @@ namespace create {
     ADD_PACKET(ID_LIGHT_CENTER_RIGHT, 2, "light_bumper_center_right", V_3);
     ADD_PACKET(ID_LIGHT_FRONT_RIGHT, 2, "light_bumper_front_right", V_3);
     ADD_PACKET(ID_LIGHT_RIGHT, 2, "light_bumper_right", V_3);
+    ADD_PACKET(ID_CLIFF_LEFT_SIGNAL, 2, "light_cliff_left", V_3);
+    ADD_PACKET(ID_CLIFF_FRONT_LEFT_SIGNAL, 2, "light_cliff_front_left", V_3);
+    ADD_PACKET(ID_CLIFF_FRONT_RIGHT_SIGNAL, 2, "light_cliff_front_right", V_3);
+    ADD_PACKET(ID_CLIFF_RIGHT_SIGNAL, 2, "light_cliff_right", V_3);
     ADD_PACKET(ID_IR_LEFT, 1, "ir_opcode_left", V_3);
     ADD_PACKET(ID_IR_RIGHT, 1, "ir_opcode_right", V_3);
     ADD_PACKET(ID_STASIS, 1, "stasis", V_3);

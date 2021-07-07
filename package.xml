@@ -15,7 +15,8 @@
   <author email="jacobmperron@gmail.com">Jacob Perron</author>
 
   <buildtool_depend>cmake</buildtool_depend>
-
+  
+  <depend>catkin</depend>
   <depend>boost</depend>
 
   <exec_depend condition="$ROS_VERSION == 1">catkin</exec_depend>

@@ -594,6 +594,30 @@ namespace create {
       uint16_t getLightSignalCenterRight() const;
 
       /**
+       * \brief Get the signal strength from the left cliff light sensor.
+       * \return value in range [0, 4095]
+       */
+      uint16_t getLightCliffSignalLeft() const;
+
+      /**
+       * \brief Get the signal strength from the front-left cliff light sensor.
+       * \return value in range [0, 4095]
+       */
+      uint16_t getLightCliffSignalFrontLeft() const;
+
+      /**
+       * \brief Get the signal strength from the front-right cliff light sensor.
+       * \return value in range [0, 4095]
+       */
+      uint16_t getLightCliffSignalFrontRight() const;
+
+      /**
+       * \brief Get the signal strength from the right cliff light sensor.
+       * \return value in range [0, 4095]
+       */
+      uint16_t getLightCliffSignalRight() const;
+
+      /**
        * \return true if Create is moving forward, false otherwise.
        */
       bool isMovingForward() const;

@@ -1053,6 +1053,46 @@ namespace create {
     }
   }
 
+  uint16_t Create::getLightCliffSignalLeft() const {
+    if (data->isValidPacketID(ID_CLIFF_LEFT_SIGNAL)) {
+      return GET_DATA(ID_CLIFF_LEFT_SIGNAL);
+    }
+    else {
+      CERR("[create::Create] ", "Cliff light sensors not supported!");
+      return 0;
+    }
+  }
+
+  uint16_t Create::getLightCliffSignalFrontLeft() const {
+    if (data->isValidPacketID(ID_CLIFF_FRONT_LEFT_SIGNAL)) {
+      return GET_DATA(ID_CLIFF_FRONT_LEFT_SIGNAL);
+    }
+    else {
+      CERR("[create::Create] ", "Cliff light sensors not supported!");
+      return 0;
+    }
+  }
+
+  uint16_t Create::getLightCliffSignalFrontRight() const {
+    if (data->isValidPacketID(ID_CLIFF_FRONT_RIGHT_SIGNAL)) {
+      return GET_DATA(ID_CLIFF_FRONT_RIGHT_SIGNAL);
+    }
+    else {
+      CERR("[create::Create] ", "Cliff light sensors not supported!");
+      return 0;
+    }
+  }
+
+  uint16_t Create::getLightCliffSignalRight() const {
+    if (data->isValidPacketID(ID_CLIFF_RIGHT_SIGNAL)) {
+      return GET_DATA(ID_CLIFF_RIGHT_SIGNAL);
+    }
+    else {
+      CERR("[create::Create] ", "Cliff light sensors not supported!");
+      return 0;
+    }
+  }
+
   bool Create::isMovingForward() const {
     if (data->isValidPacketID(ID_STASIS)) {
       return GET_DATA(ID_STASIS) == 1;
